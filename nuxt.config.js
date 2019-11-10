@@ -4,10 +4,11 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: '-Ismet- エンジニア・デザイナーのためのコミュニティ',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'keywords', content: 'デザイナー, エンジニア、コミュニティ, イズメト' },
       {
         hid: 'description',
         name: 'description',
@@ -23,7 +24,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~assets/style_pc.css', '~assets/style_sp.css'],
   /*
    ** Plugins to load before mounting the App
    */
