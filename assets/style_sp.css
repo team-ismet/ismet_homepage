@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+/* --------------------------------------
+iPad, iPad pro, tablet
+-------------------------------------- */
+@media screen and (max-width: 768px){
+    .br_tb{
+        display: inline;
+    }
+
+    #top > h1{
+        line-height: 1.2em;
+        margin-bottom: .5em;
+    }
+    #top p:nth-of-type(1)::before{
+        left: 15rem;
+        right: 15rem;
+    }
+
+}
+
+
+/* --------------------------------------
+iPhone, android
+-------------------------------------- */
+@media screen and (max-width: 767px){
+    .br_sp{
+        display: inline;
+    }
+
+    #top > img{
+        width: 45%;
+    }
+    #top > h1{
+        font-size: 1.5em;
+    }
+    #top > p:nth-of-type(1){
+        font-size: 1.2em;
+        margin-bottom: 3.5em;
+    }
+    #top p:nth-of-type(1)::before{
+        left: 5rem;
+        right: 5rem;
+    }
+    #top > p:nth-of-type(2){
+        font-size: 1em;
+    }
+}
