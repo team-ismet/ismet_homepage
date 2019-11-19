@@ -5,8 +5,9 @@ module.exports = {
         "node": true
     },
     "extends": [
-        "plugin:vue/essential",
-        "google"
+        "eslint:recommended",
+        "google",
+        "plugin:vue/essential"
     ],
     "globals": {
         "Atomics": "readonly",
