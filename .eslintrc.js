@@ -1,25 +1,27 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true,
         "node": true
     },
     "extends": [
-        "eslint:recommended",
-        "google",
-        "plugin:vue/essential"
+        '@nuxtjs',
+        'prettier',
+        'prettier/vue',
+        'plugin:prettier/recommended',
+        'plugin:nuxt/recommended'
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
     "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+        "parser": 'babel-eslint'
     },
     "plugins": [
-        "vue"
+        "prettier"
     ],
-    "rules": {
+    rules: {
+        "prettier/prettier": [
+            "error", { 
+                "semi": false,
+                "singleQuote": true,
+            }
+        ]
     }
 };
