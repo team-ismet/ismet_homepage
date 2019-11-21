@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <header>
     <img :src="require('@/assets/img/logo_ver.png')" />
     <h1>
       エンジニア・デザイナーのためのコミュニティ
@@ -9,13 +9,11 @@
       わからなくて当たり前<br />
       目まぐるしく変化していくこの業界で、手を取り合って強かに生きていきましょう
     </p>
-  </section>
+  </header>
 </template>
 
 <style lang="scss" scoped>
-@import '@/styles/variables.scss';
-
-section {
+header {
   width: 100%;
   background-image: url('~assets/img/ismet_top_header.png');
   background-size: cover;
