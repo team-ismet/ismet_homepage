@@ -23,7 +23,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/grobal.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -38,7 +38,11 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/style-resources'],
+
+  styleResources: {
+    scss: ['@/styles/_variables.scss']
+  },
   /*
    ** Build configuration
    */
