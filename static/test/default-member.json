@@ -1,0 +1,9 @@
+{
+  "icon": "./test/test-whereby.png",
+  "name": "テスト太郎",
+  "details": {
+    "項目1": "test",
+    "項目2": "hogehoge",
+    "項目3": "hogetest"
+  }
+}
