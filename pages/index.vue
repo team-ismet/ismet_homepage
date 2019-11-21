@@ -1,9 +1,49 @@
 <template>
-  <section id="top">
-    <img src="../assets/img/logo_ver.png">
-    <h1>エンジニア・デザイナー<br class="br_sp">のための<br class="br_tb">コミュニティ</h1>
-    <p>分野も変われば、熟練者も初学者</p>
-    <p>わからなくて当たり前<br>目まぐるしく変化していくこの業界で、<br>手を取り合って強かに生きていきましょう</p>
-  </section>
-
+  <div class="top-page-box">
+    <caption-image />
+    <main-contents />
+    <open-channels :channels="openChannels" />
+    <inquiry-contacts :contancts="inquiryContacts" />
+    <footer>
+      <img :src="require('@/assets/img/logo_side.png')" />
+      <p>©︎ Ismet community 2019</p>
+    </footer>
+  </div>
 </template>
+
+<script>
+import captionImage from '@/components/index/caption-image.vue'
+import mainContents from '@/components/index/main-contents.vue'
+import openChannels from '@/components/index/open-channels.vue'
+import inquiryContacts from '@/components/index/inquiry-contacts.vue'
+
+import openChannelArray from '@/assets/js/opne-channel.js'
+import contactArray from '@/assets/js/inquriy-contacts.js'
+
+export default {
+  components: { captionImage, mainContents, openChannels, inquiryContacts },
+  computed: {
+    openChannels() {
+      return openChannelArray
+    },
+    inquiryContacts() {
+      return contactArray
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.top-page-box {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6d6767;
+
+    img {
+      height: 5rem;
+    }
+  }
+}
+</style>
